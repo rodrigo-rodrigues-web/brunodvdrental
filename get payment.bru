@@ -1,0 +1,34 @@
+meta {
+  name: get payment
+  type: http
+  seq: 13
+}
+
+get {
+  url: {{protocol}}://{{url}}:{{port}}/payment
+  body: none
+  auth: basic
+}
+
+auth:basic {
+  username: test
+  password: Welcome1234!
+}
+
+assert {
+  res.status: eq 200
+}
+
+tests {
+  // pm.test("Status code is 200", function () {
+  //     pm.response.to.have.status(200);
+  // });
+  // 
+  // pm.test("response must be valid and have a body", function () {
+  //      pm.response.to.be.ok;
+  //      pm.response.to.be.withBody;
+  //      pm.response.to.be.json;
+  // });
+  // console.log("First payment id: ", pm.response.json().resources[0].payment_id)
+  // pm.environment.set("payment_id", pm.response.json().resources[0].payment_id);
+}

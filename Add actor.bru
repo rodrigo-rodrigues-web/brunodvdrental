@@ -1,0 +1,41 @@
+meta {
+  name: Add actor
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{protocol}}://{{url}}:{{port}}/actor
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: test
+  password: Welcome1234!
+}
+
+body:json {
+  {
+      "first_name": "Bruno",
+      "last_name": "Piers",
+      "last_update": "2024-02-26T19:35:48"
+  }
+}
+
+vars:post-response {
+  actor_id: res.body.actor_id
+}
+
+assert {
+  res.body.actor_id: isDefined
+  res.status: eq 201
+}
+
+tests {
+  // pm.test("Status code is 201 - Created", function () {
+  //     pm.response.to.have.status(201);
+  //     //pm.expect(pm.response.code).to.be.oneOf([201,204]);
+  // });
+  // pm.environment.set("actor_id", pm.response.json().actor_id);
+}

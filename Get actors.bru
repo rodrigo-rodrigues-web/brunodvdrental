@@ -1,0 +1,37 @@
+meta {
+  name: Get actors
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{protocol}}://{{url}}:{{port}}/actor/?page=2&limit=10
+  body: none
+  auth: basic
+}
+
+query {
+  page: 2
+  limit: 10
+}
+
+auth:basic {
+  username: test
+  password: Welcome1234!
+}
+
+assert {
+  res.body.resources: isDefined null
+}
+
+tests {
+  // pm.test("Status code is 200", function () {
+  //     pm.response.to.have.status(200);
+  // });
+  // 
+  // pm.test("response must be valid and have a body", function () {
+  //      pm.response.to.be.ok;
+  //      pm.response.to.be.withBody;
+  //      pm.response.to.be.json;
+  // });
+}

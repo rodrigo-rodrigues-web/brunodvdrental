@@ -1,0 +1,57 @@
+meta {
+  name: Update payment
+  type: http
+  seq: 14
+}
+
+put {
+  url: {{protocol}}://{{url}}:{{port}}/payment/{{payment_id}}
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: test
+  password: Welcome1234!
+}
+
+body:json {
+  {
+      "amount": 120
+  
+  }
+}
+
+assert {
+  res.status: eq 200
+  res.body: isDefined 
+}
+
+script:pre-request {
+  // pm.globals.set("randomFloat", _.random(1,10,true));
+}
+
+tests {
+  // pm.test("Status code is 200", function () {
+  //     pm.response.to.have.status(200);
+  // });
+  // 
+  // pm.test("response must be valid and have a body", function () {
+  //      pm.response.to.be.ok;
+  //      pm.response.to.be.withBody;
+  //      pm.response.to.be.json;
+  // });
+  // 
+  // let id = parseInt(pm.environment.get("payment_id"));
+  // let count = parseInt(pm.environment.get("count"));
+  // if (count < 3){
+  //     postman.setNextRequest("Update payment");
+  //     pm.environment.set("payment_id", id + 1);
+  //     pm.environment.set("count", count + 1);
+  // }
+  // else {
+  //     postman.setNextRequest(null);
+  //     //pm.environment.set("payment_id", 17604);
+  //     pm.environment.set("count", 0);
+  // }
+}

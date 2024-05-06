@@ -1,0 +1,40 @@
+meta {
+  name: film_in_stock SP
+  type: http
+  seq: 21
+}
+
+post {
+  url: {{protocol}}://{{url}}:{{port}}/procedures/execute
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: test
+  password: Welcome1234!
+}
+
+body:json {
+  {
+  	"name": "film_in_stock",
+  	"schema": "public",
+  	"returns_value": true,
+  	"parameters": [
+  		"1",
+  		"2"
+  	]
+  }
+}
+
+tests {
+  // pm.test("Status code is 200", function () {
+  //     pm.response.to.have.status(200);
+  // });
+  // 
+  // pm.test("response must be valid and have a body", function () {
+  //      pm.response.to.be.ok;
+  //      pm.response.to.be.withBody;
+  //      pm.response.to.be.json;
+  // });
+}

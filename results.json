@@ -1,0 +1,245 @@
+Running Folder Recursively 
+
+Get actors (200 OK) - 2188 ms
+   G£ô assert: res.body.resources: isDefined null
+Add actor (201 CREATED) - 3640 ms
+   G£ô assert: res.body.actor_id: isDefined
+   G£ô assert: res.status: eq 201
+delete actor (204 NO CONTENT) - 2284 ms
+   G£ô assert: res.status: eq 204
+Get address (200 OK) - 3937 ms
+   G£ô assert: res.body.resources: isDefined
+Get category (200 OK) - 3550 ms
+   G£ô assert: res.body.resources: isDefined
+Get city (200 OK) - 3902 ms
+   G£ô assert: res.body.resources: isDefined
+Get country (200 OK) - 3962 ms
+   G£ô assert: res.body.resources: isDefined
+Get customer (200 OK) - 3937 ms
+   G£ô assert: res.body.resources: isDefined null
+get film (200 OK) - 4380 ms
+   G£ô assert: res.body.resources: isDefined null
+get inventory (200 OK) - 4933 ms
+   G£ô assert: res.status: eq 200
+get language (200 OK) - 3504 ms
+   G£ô assert: res.body.resources: isDefined null
+Add language (201 CREATED) - 3144 ms
+   G£ô assert: res.status: eq 201
+get payment (200 OK) - 6719 ms
+   G£ô assert: res.status: eq 200
+Update payment (200 OK) - 1661 ms
+   G£ô assert: res.status: eq 200
+   G£ô assert: res.body: isDefined
+get staff (200 OK) - 3552 ms
+   G£ô assert: res.body.resources: isDefined null
+   G£ô assert: res.status: eq 200
+get rental (200 OK) - 7324 ms
+   G£ô assert: res.body.resources: isDefined 1
+get store (200 OK) - 3242 ms
+   G£ô assert: res.body.resources: isDefined
+sql-select (200 OK) - 1333 ms
+   G£ô assert: res.body.query_results: neq null
+film_in_stock func (400 BAD REQUEST) - 1367 ms
+held_by_customer func (400 BAD REQUEST) - 1514 ms
+film_in_stock SP (403 FORBIDDEN) - 1675 ms
+
+Requests:    21 passed, 21 total
+Tests:       0 passed, 0 total
+Assertions:  21 passed, 21 total
+Ran all requests - 71748 ms
+Running Folder Recursively 
+
+Get actors (200 OK) - 2449 ms
+   G£ô assert: res.body.resources: isDefined null
+Add actor (201 CREATED) - 3622 ms
+   G£ô assert: res.body.actor_id: isDefined
+   G£ô assert: res.status: eq 201
+delete actor (204 NO CONTENT) - 2644 ms
+   G£ô assert: res.status: eq 204
+Get address (200 OK) - 4276 ms
+   G£ô assert: res.body.resources: isDefined
+Get category (200 OK) - 3580 ms
+   G£ô assert: res.body.resources: isDefined
+Get city (200 OK) - 4010 ms
+   G£ô assert: res.body.resources: isDefined
+Get country (200 OK) - 3189 ms
+   G£ô assert: res.body.resources: isDefined
+Get customer (200 OK) - 3645 ms
+   G£ô assert: res.body.resources: isDefined null
+get film (200 OK) - 5001 ms
+   G£ô assert: res.body.resources: isDefined null
+get inventory (200 OK) - 4707 ms
+   G£ô assert: res.status: eq 200
+get language (200 OK) - 3198 ms
+   G£ô assert: res.body.resources: isDefined null
+Add language (201 CREATED) - 3080 ms
+   G£ô assert: res.status: eq 201
+get payment (200 OK) - 6508 ms
+   G£ô assert: res.status: eq 200
+Update payment (200 OK) - 1628 ms
+   G£ô assert: res.status: eq 200
+   G£ô assert: res.body: isDefined
+get staff (200 OK) - 3531 ms
+   G£ô assert: res.body.resources: isDefined null
+   G£ô assert: res.status: eq 200
+get rental (200 OK) - 6998 ms
+   G£ô assert: res.body.resources: isDefined 1
+get store (200 OK) - 3338 ms
+   G£ô assert: res.body.resources: isDefined
+sql-select (200 OK) - 1263 ms
+   G£ô assert: res.body.query_results: neq null
+film_in_stock func (400 BAD REQUEST) - 1391 ms
+held_by_customer func (400 BAD REQUEST) - 1274 ms
+film_in_stock SP (403 FORBIDDEN) - 2062 ms
+
+Requests:    21 passed, 21 total
+Tests:       0 passed, 0 total
+Assertions:  21 passed, 21 total
+Ran all requests - 71394 ms
+Running Folder Recursively 
+
+Get actors (200 OK) - 2010 ms
+   G£ô assert: res.body.resources: isDefined null
+Add actor (201 CREATED) - 3187 ms
+   G£ô assert: res.body.actor_id: isDefined
+   G£ô assert: res.status: eq 201
+delete actor (204 NO CONTENT) - 2207 ms
+   G£ô assert: res.status: eq 204
+Get address (200 OK) - 4262 ms
+   G£ô assert: res.body.resources: isDefined
+Get category (200 OK) - 3235 ms
+   G£ô assert: res.body.resources: isDefined
+Get city (200 OK) - 3866 ms
+   G£ô assert: res.body.resources: isDefined
+Get country (200 OK) - 3258 ms
+   G£ô assert: res.body.resources: isDefined
+Get customer (200 OK) - 4174 ms
+   G£ô assert: res.body.resources: isDefined null
+get film (200 OK) - 4016 ms
+   G£ô assert: res.body.resources: isDefined null
+get inventory (200 OK) - 4512 ms
+   G£ô assert: res.status: eq 200
+get language (200 OK) - 3102 ms
+   G£ô assert: res.body.resources: isDefined null
+Add language (201 CREATED) - 2998 ms
+   G£ô assert: res.status: eq 201
+get payment (200 OK) - 7940 ms
+   G£ô assert: res.status: eq 200
+Update payment (200 OK) - 1709 ms
+   G£ô assert: res.status: eq 200
+   G£ô assert: res.body: isDefined
+get staff (200 OK) - 3206 ms
+   G£ô assert: res.body.resources: isDefined null
+   G£ô assert: res.status: eq 200
+get rental (200 OK) - 7274 ms
+   G£ô assert: res.body.resources: isDefined 1
+get store (200 OK) - 3294 ms
+   G£ô assert: res.body.resources: isDefined
+sql-select (200 OK) - 1273 ms
+   G£ô assert: res.body.query_results: neq null
+film_in_stock func (400 BAD REQUEST) - 1565 ms
+held_by_customer func (400 BAD REQUEST) - 1305 ms
+film_in_stock SP (403 FORBIDDEN) - 1940 ms
+
+Requests:    21 passed, 21 total
+Tests:       0 passed, 0 total
+Assertions:  21 passed, 21 total
+Ran all requests - 70333 ms
+Running Folder Recursively 
+
+Get actors (200 OK) - 2156 ms
+   G£ô assert: res.body.resources: isDefined null
+Add actor (201 CREATED) - 3350 ms
+   G£ô assert: res.body.actor_id: isDefined
+   G£ô assert: res.status: eq 201
+delete actor (204 NO CONTENT) - 2196 ms
+   G£ô assert: res.status: eq 204
+Get address (200 OK) - 3526 ms
+   G£ô assert: res.body.resources: isDefined
+Get category (200 OK) - 3951 ms
+   G£ô assert: res.body.resources: isDefined
+Get city (200 OK) - 3771 ms
+   G£ô assert: res.body.resources: isDefined
+Get country (200 OK) - 3859 ms
+   G£ô assert: res.body.resources: isDefined
+Get customer (200 OK) - 4456 ms
+   G£ô assert: res.body.resources: isDefined null
+get film (200 OK) - 5969 ms
+   G£ô assert: res.body.resources: isDefined null
+get inventory (200 OK) - 4888 ms
+   G£ô assert: res.status: eq 200
+get language (200 OK) - 3774 ms
+   G£ô assert: res.body.resources: isDefined null
+Add language (201 CREATED) - 3015 ms
+   G£ô assert: res.status: eq 201
+get payment (200 OK) - 7233 ms
+   G£ô assert: res.status: eq 200
+Update payment (200 OK) - 1719 ms
+   G£ô assert: res.status: eq 200
+   G£ô assert: res.body: isDefined
+get staff (200 OK) - 3449 ms
+   G£ô assert: res.body.resources: isDefined null
+   G£ô assert: res.status: eq 200
+get rental (200 OK) - 7197 ms
+   G£ô assert: res.body.resources: isDefined 1
+get store (200 OK) - 3344 ms
+   G£ô assert: res.body.resources: isDefined
+sql-select (200 OK) - 1251 ms
+   G£ô assert: res.body.query_results: neq null
+film_in_stock func (400 BAD REQUEST) - 1285 ms
+held_by_customer func (400 BAD REQUEST) - 1305 ms
+film_in_stock SP (403 FORBIDDEN) - 1613 ms
+
+Requests:    21 passed, 21 total
+Tests:       0 passed, 0 total
+Assertions:  21 passed, 21 total
+Ran all requests - 73307 ms
+Running Folder Recursively 
+
+Get actors (200 OK) - 2186 ms
+   G£ô assert: res.body.resources: isDefined null
+Add actor (201 CREATED) - 3926 ms
+   G£ô assert: res.body.actor_id: isDefined
+   G£ô assert: res.status: eq 201
+delete actor (204 NO CONTENT) - 2011 ms
+   G£ô assert: res.status: eq 204
+Get address (200 OK) - 3819 ms
+   G£ô assert: res.body.resources: isDefined
+Get category (200 OK) - 3406 ms
+   G£ô assert: res.body.resources: isDefined
+Get city (200 OK) - 3950 ms
+   G£ô assert: res.body.resources: isDefined
+Get country (200 OK) - 3353 ms
+   G£ô assert: res.body.resources: isDefined
+Get customer (200 OK) - 3892 ms
+   G£ô assert: res.body.resources: isDefined null
+get film (200 OK) - 4492 ms
+   G£ô assert: res.body.resources: isDefined null
+get inventory (200 OK) - 4453 ms
+   G£ô assert: res.status: eq 200
+get language (200 OK) - 3633 ms
+   G£ô assert: res.body.resources: isDefined null
+Add language (201 CREATED) - 3109 ms
+   G£ô assert: res.status: eq 201
+get payment (200 OK) - 8065 ms
+   G£ô assert: res.status: eq 200
+Update payment (200 OK) - 1678 ms
+   G£ô assert: res.status: eq 200
+   G£ô assert: res.body: isDefined
+get staff (200 OK) - 3370 ms
+   G£ô assert: res.body.resources: isDefined null
+   G£ô assert: res.status: eq 200
+get rental (200 OK) - 6793 ms
+   G£ô assert: res.body.resources: isDefined 1
+get store (200 OK) - 3696 ms
+   G£ô assert: res.body.resources: isDefined
+sql-select (200 OK) - 1338 ms
+   G£ô assert: res.body.query_results: neq null
+film_in_stock func (400 BAD REQUEST) - 1471 ms
+held_by_customer func (400 BAD REQUEST) - 1292 ms
+film_in_stock SP (403 FORBIDDEN) - 1698 ms
+
+Requests:    21 passed, 21 total
+Tests:       0 passed, 0 total
+Assertions:  21 passed, 21 total
+Ran all requests - 71631 ms

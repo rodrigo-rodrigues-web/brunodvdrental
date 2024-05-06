@@ -1,0 +1,32 @@
+meta {
+  name: get inventory
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{protocol}}://{{url}}:{{port}}/inventory
+  body: none
+  auth: basic
+}
+
+auth:basic {
+  username: test
+  password: Welcome1234!
+}
+
+assert {
+  res.status: eq 200
+}
+
+tests {
+  // pm.test("Status code is 200", function () {
+  //     pm.response.to.have.status(200);
+  // });
+  // 
+  // pm.test("response must be valid and have a body", function () {
+  //      pm.response.to.be.ok;
+  //      pm.response.to.be.withBody;
+  //      pm.response.to.be.json;
+  // });
+}
